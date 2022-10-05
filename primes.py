@@ -3,10 +3,10 @@
 
 def primes(number_of_primes):
     list=[]
-    counter = 0
+    count = 0
     primenumber = 2;
 
-    while(counter<number_of_primes):
+    while(count<number_of_primes):
         primeCheck = True
 
         for i in range(2,primenumber):
@@ -15,7 +15,7 @@ def primes(number_of_primes):
 
         if primeCheck:
             list.append(primenumber)
-            counter += counter
+            count += count
         primenumber+=primenumber
 
     return list
