@@ -2,20 +2,19 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    list=[]
-    count = 0
+    list = []
+    count = 0;
     primenumber = 2;
 
-    while(count<number_of_primes):
+    while (count < number_of_primes):
         primeCheck = True
 
-        for i in range(2,primenumber):
-            if(primenumber % i ==0):
-                primeCheck=False
+        for i in range(2, primenumber):
+            if (primenumber % i == 0):
+                primeCheck = False
 
         if primeCheck:
             list.append(primenumber)
-            count += count
-        primenumber+=primenumber
-
+            count += 1
+        primenumber += 1
     return list
